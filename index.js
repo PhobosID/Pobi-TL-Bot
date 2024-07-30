@@ -1,5 +1,6 @@
 const { Telegraf, Markup } = require('telegraf');
-const bot = new Telegraf('##########'); // Replace ########## With your Bot Token from BotFather
+const Token = '##########'; // Replace ########## With your Bot Token from BotFather
+const bot = new Telegraf(Token); 
 
 bot.start((ctx) => { // Initialize Start Command (/start)
   ctx.reply(
