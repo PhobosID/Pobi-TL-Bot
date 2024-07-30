@@ -30,10 +30,10 @@ bot.help((ctx) => { // Initialize Help Command (/help)
     )
 });
 
-bot.info((ctx) => { // Initialize Info Command (/info)
-    ctx.reply(
+bot.command('info', (ctx) => { // Initialize Info Command (/info)
+  ctx.reply(
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat tellus non nunc facilisis, vitae ultrices dolor varius."
-    )
+  );
 });
 
 bot.launch().then(() => {
